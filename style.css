@@ -17,37 +17,113 @@ aside {
   padding: 0;
   top: 0;
   left: -280px;
+  /*left: 0;*/
   width: 300px;
   height: 100%;
-  background-color: rgba(132, 132, 132, 0.8);
+  /*background-color: rgba(132, 132, 132, 0.8);*/
+  background-color: rgba( 0, 0, 0, 0.7);
+}
+aside img{
+  margin: 5px 60px 0px 60px;
+
+  width: 180px;
 }
 
-aside img{
-  margin: 20px;
-  width: 260px;
+.icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  background: url(./img/sys16_Q1_Logo.png) 0 0;
+}
+
+.study {background-position: -80px 0px;}
+.maru  {background-position: -80px -80px;}
+.oya   {background-position: -80px -160px;}
+.sugi  {background-position: -80px -240px;}
+.naru  {background-position: -80px -320px;}
+.stair {background-position: -80px -400px;}
+
+aside h2 {
+  margin: 20px 0 0 20px;
+  padding: 0;
+}
+aside h2 a {
+  color: white;
+  text-decoration: none;
 }
 
 aside ul,
 aside ol {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 1.4;
   list-style: none;
 }
 aside li {
   list-style: none;
-  margin: 5px 0 5px 0;
+  margin: 0;
+  border-top: 1px solidrgba(0,0,0,0.14);
+}
+aside li:last-child {
+  style="border-top: 1px solidrgba(0,0,0,0.14);
 }
 aside li a{
+  position: relative;
   display: block;
   text-decoration: none;
+  width: 300px;
+}
+
+aside li a i,
+aside a i {
+  margin: 5px 10px 5px 0;
+  padding: 0;
+  float: left;
+  border: none;
+  background-color: white;
+  width: 80px;
+}
+
+aside li a h3 {
+  margin: 0 0 0 0;
+  padding: 18px 0 0 0;
+  display: block;
   color: white;
   font-size: 30px;
-  width: 300px;
-  font-weight: bold;
-  text-align: center;
+  line-height: 1.2;
 }
+aside li a p{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+aside li a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+aside a {
+  text-decoration: none;
+}
+aside a h2{
+  margin: 0 0 0 0;
+  padding: 25px 0 0 0;
+  display: block;
+  color: white;
+  font-size: 30px;
+  line-height: 1.2;
+}
+aside .aside_link  {
+  margin-top:10px;
+  border-top: 1px solidrgba(0,0,0,0.14);
+  border-bottom: 1px solidrgba(0,0,0,0.14);
+  width:300px;
+  height:90px;
+  display:block;
+}
+
 
 .TopImg{
   position: absolute;
